@@ -16,17 +16,16 @@ function init() {
     document.addEventListener('keydown', function (e) {
     const key = parseInt(e.detail || e.which);
  
-    if (key === codes[index]) {
-      index++;
- 
-    if (index === codes.length) {
-      alert("Hurray!");
- 
+      if (key === codes[index]) {
+        index++;
+   
+      if (index === codes.length) {
+        alert("Hurray!");
+   
+        index = 0;
+      }
+    } else {
       index = 0;
     }
-  } else {
-    index = 0;
-  }
-}
 }
 init();
