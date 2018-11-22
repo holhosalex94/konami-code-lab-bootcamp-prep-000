@@ -17,10 +17,10 @@ function init() {
         const getElement = document.querySelector('body');
 
         getElement.addEventListener('keydown', function(e) {
-            if (code[index] === e.which || code[index] === e.detail) {
+            if (codes[index] === e.which || codes[index] === e.detail) {
                 index++;
 
-                if (index === code.length) {
+                if (index === codes.length) {
                     alert("CHEAT EXECUTED!!");
                     index = 0;
                 }
