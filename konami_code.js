@@ -13,19 +13,19 @@ const codes = [
 
 function init() {
 
-  var index = 0;
-        const getElement = document.querySelector('body');
-
-        getElement.addEventListener('keydown', function(e) {
-            if (codes[index] === e.which || codes[index] === e.detail) {
-                index++;
-
-                if (index === codes.length) {
-                    alert("CHEAT EXECUTED!!");
-                    index = 0;
-                }
-            } else {
-                index = 0;
-            }
-        })
+  var index = 0
+  document.body.addEventListener('keydown', onKeyDownHandler);
+   function onKeyDownHandler(e) {
+    const key = parseInt(e.detail || e.which)
+    console.log('key', key)
+    if (key === codes[index]) {
+      index++
+       if (index === codes.length) {
+        alert("Hurray!")
+        index = 0
+      }
+    } else {
+      index = 0
+    }
+  }
 }	
