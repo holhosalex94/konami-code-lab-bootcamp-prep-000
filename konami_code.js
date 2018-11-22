@@ -11,9 +11,9 @@ const codes = [
   "a"
 ];
 
-function init(codes) {
+function init() {
    var index = 0;
-  document.addEventListener('keydown', function (e) {
+    document.addEventListener('keydown', function (e) {
     const key = parseInt(e.detail || e.which);
  
     if (key === codes[index]) {
@@ -29,4 +29,4 @@ function init(codes) {
   }
 }
 }
-init(codes);
+init();
