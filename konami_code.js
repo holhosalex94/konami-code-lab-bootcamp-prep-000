@@ -19,7 +19,6 @@ function init() {
     const key = parseInt(e.detail || e.which)
     console.log('key', key)
     for (let i = 0, l = codes.length; i < l; i++) {
-     triggerKeyDown(codes[i]);
      alert("Hurray!")
     }
   }
