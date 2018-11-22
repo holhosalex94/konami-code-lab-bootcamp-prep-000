@@ -18,14 +18,9 @@ function init() {
    function onKeyDownHandler(e) {
     const key = parseInt(e.detail || e.which)
     console.log('key', key)
-    if (key === codes[index]) {
-      index++
-       if (index === codes.length) {
-        alert("Hurray!")
-        index = 0
-      }
-    } else {
-      index = 0
+    for (let i = 0, l = codes.length; i < l; i++) {
+     triggerKeyDown(codes[i]);
+     alert("Hurray!")
     }
   }
 }	
