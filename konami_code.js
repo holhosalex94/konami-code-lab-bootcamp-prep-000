@@ -11,12 +11,8 @@ const codes = [
   "a"
 ];
 
-<<<<<<< HEAD
-function init(e) {
-=======
-function init() {
+function init(codes) {
   function onKeyDownHandler(e) {
->>>>>>> 89bf27d00d09e97eafc0eed2b6e4ed9a1534131a
     const key = e.key;
  
     if (key === codes[index]) {
@@ -30,9 +26,6 @@ function init() {
   } else {
     index = 0;
   }
-<<<<<<< HEAD
-=======
 }
->>>>>>> 89bf27d00d09e97eafc0eed2b6e4ed9a1534131a
 }
-init();
+init(codes);
